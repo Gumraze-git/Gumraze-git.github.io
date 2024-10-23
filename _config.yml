@@ -103,6 +103,7 @@ avatar: assets/avatar_img/android-chrome-512x512.png
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
+
 # 소셜 미디어에서 미리보기 이미지로 사용할 이미지, 일반적으로 1.91:1(1200 x 630) 크기의 이미지가 사용됨.
 # ex) social_preview_image.jpg, https://example.com/path/to/your/image.jpg
 # 외부 리소스의 경우 CORS(Cross-Origin Resource Sharing)을 지원해야함.
@@ -116,7 +117,7 @@ comments:
   provider: disqus # [disqus | utterances | giscus]
   # The provider options are as follows:
   disqus:
-    shortname: guramaze-git # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+    shortname: gumraze-git # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
   # utterances settings › https://utteranc.es/
   #utterances:
   #  repo: # <gh-username>/<repo>

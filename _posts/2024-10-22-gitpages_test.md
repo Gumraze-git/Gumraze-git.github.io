@@ -1,5 +1,5 @@
 ---
-title: WELCOME
+title: Git Pages Test Post
 author: Gumraze
 date: 2024-10-22
 category: test
