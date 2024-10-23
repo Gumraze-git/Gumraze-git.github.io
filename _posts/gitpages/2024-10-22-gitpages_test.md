@@ -1,29 +1,48 @@
 ---
 title: Git Pages Test Post
-author: Gumraze
 date: 2024-10-22
-category: test
+category: GitHub Pages
 layout: post
 comments: true
 tag: test
 ---
-# Testing note
-<br>2024-10-22: gitpages test: pass
-<br>2024-10-23: comments test: pass
-    <br> Disqus comments 설정: local pass
-    <br> Disqus comments 에러 발생(issue#1): global fail
-    <br> Disqus comments 에러 처리 완료
+---
+# **Feature and Testing**
+## **Disqus 댓글 기능 활성화**
+- 댓글 기능 활성화 방법 작성 예정(~10/26)
 
-# Feature note
-author: Gumraze 미작동
-<br>---
-<br>title: write title
-<br>author: Gumraze
-<br>date: wirte date
-<br>---
-<br>author를 따로 지정하지 않아도 잘 작성됨.
+## **website tab image 테스트**
+- chrisp theme guide에서 제시하는 favicon 이미지 생성 시, `48x48`은 생성되나, `16x16`, `32x32` 이미지 미생성되어 테스트 수행
+- favicon 48x48 이미지를 2개 복사하여 `favicon 16x16` 및 `favicon 32x32`로 설정하여 `favicons` 폴더에 있는 기존 이미지들 대체
+- **결과** : 이미지 대체 되나, loading에 시간이 걸림.
 
-<br> date를 지정해두어도 update를 수행한 date가 나타남.
+
+![Tab image](/assets/attachment/gitpages/gitpages_test_3.png){: width="500" }
+_초기에는 위와 같이, 기존 Chrispy 테마의 이미지가 나타난다._
+
+![Tab image](/assets/attachment/gitpages/gitpages_test_2.png){: width="500" }
+_대략 1분 뒤, 설정한 이미지가 나타나게 됨._
+
+- `16x16`, `32x32` 파일 생성하여 대체 필요.
+
+---
+# **Notes**
+## **author: Gumraze 미작동**
+
+```
+---
+title: write title
+author: Gumraze # 다음과 같이 작성하면 author가 보이지 않게 됨.
+date: wirte date
+---
+```
+- author를 지정하게 되면, 아래와 같이 작성자가 나타나지 않음.
+
+![Author image](/assets/attachment/gitpages/gitpages_test_4.png){: width="200" height="300"}
+_author 이름이 나타나지 않음._
+
+## **Updated**
+- date를 지정해두어도 update를 수행한 date가 나타남.
 
 
 
