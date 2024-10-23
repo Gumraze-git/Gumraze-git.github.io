@@ -9,14 +9,14 @@ theme: jekyll-theme-chirpy
 lang: en
 
 # Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
-timezone:
+timezone: Asia/Seoul
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Gumraze # the main title
+title: Gumraze # Title 이름
 
-tagline: Gumraze's Dev and Travel Note # it will display as the subtitle
+tagline: Gumraze's Dev and Travel Note # Sub title 설정
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
@@ -98,11 +98,15 @@ theme_mode: # [light | dark]
 #cdn:
 
 # the avatar on sidebar, support local or CORS resources
+# 사이드 바 이미지 설정
 avatar: assets/avatar_img/android-chrome-512x512.png
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
-social_preview_image: # string, local or CORS resources
+# 소셜 미디어에서 미리보기 이미지로 사용할 이미지, 일반적으로 1.91:1(1200 x 630) 크기의 이미지가 사용됨.
+# ex) social_preview_image.jpg, https://example.com/path/to/your/image.jpg
+# 외부 리소스의 경우 CORS(Cross-Origin Resource Sharing)을 지원해야함.
+social_preview_image: assets/avatar_img/android-chrome-512x512.png # string, local or CORS resources
 
 # boolean type, the global switch for TOC in posts.
 toc: true
@@ -112,7 +116,7 @@ comments:
   provider: disqus # [disqus | utterances | giscus]
   # The provider options are as follows:
   disqus:
-    shortname: Guramaze-git # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+    shortname: guramaze-git # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
   # utterances settings › https://utteranc.es/
   #utterances:
   #  repo: # <gh-username>/<repo>
