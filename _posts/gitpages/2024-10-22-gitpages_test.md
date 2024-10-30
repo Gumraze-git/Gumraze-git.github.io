@@ -17,11 +17,11 @@ tag: [GitHub, Test]
 - **결과** : 이미지 대체 되나, loading에 시간이 걸림.
 
 
-<img src="/assets/attachment/gitpages/gitpages_test_3.png">  
+<img src="/assets/attachment/gitpages/gitpages_test_3.png" alt="tab icon">  
 
 - 초기에는 위와 같이, 기존 Chrispy 테마의 이미지가 나타난다.
 
-<img src="/assets/attachment/gitpages/gitpages_test_2.png">
+<img src="/assets/attachment/gitpages/gitpages_test_2.png" alt="tab icon">
 - 대략 1분 뒤, 설정한 이미지가 나타나게 됨.
 
 - `16x16`, `32x32` 파일 생성하여 대체 필요.
@@ -39,7 +39,7 @@ date: wirte date
 ```
 - author를 지정하게 되면, 아래와 같이 작성자가 나타나지 않음.
 
-<img src="/assets/attachment/gitpages/gitpages_test_4.png">
+<img src="/assets/attachment/gitpages/gitpages_test_4.png" alt="author">
 
 _author 이름이 나타나지 않음._
 
@@ -48,11 +48,11 @@ _author 이름이 나타나지 않음._
 
 # **Problem**
 - Category에서 펼치기 버튼이 작동하지 않는 문제 존재함.
-<img src="/assets/attachment/gitpages/gitpages_test_5.png">
+<img src="/assets/attachment/gitpages/gitpages_test_5.png" alt="category">
 
 
 - Category의 끝 부분의 라운딩에서 미세한 각이 보임.
-<img src="/assets/attachment/gitpages/gitpages_test_6.png">
+<img src="/assets/attachment/gitpages/gitpages_test_6.png" alt="category">
 
 
 
