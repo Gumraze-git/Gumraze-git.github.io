@@ -4,7 +4,7 @@ date: 2024-10-22
 category: GitHub Pages
 layout: post
 comments: true
-tag: test
+tag: [GitHub, Test]
 ---
 ---
 # **Feature and Testing**
@@ -38,11 +38,17 @@ date: wirte date
 ```
 - author를 지정하게 되면, 아래와 같이 작성자가 나타나지 않음.
 
-![Author image](/assets/attachment/gitpages/gitpages_test_4.png){: width="200" height="300"}
+![Author image](/assets/attachment/gitpages/gitpages_test_4.png){: width="300" height="300"}
 _author 이름이 나타나지 않음._
 
 ## **Updated**
 - date를 지정해두어도 update를 수행한 date가 나타남.
 
+# **Problem**
+- Category에서 펼치기 버튼이 작동하지 않는 문제 존재함.
+![gitpages_test_5.png](/assets/attachment/gitpages/gitpages_test_5.png)
+
+- Category의 끝 부분의 라운딩에서 미세한 각이 보임.
+![gitpages_test_6.png](../../assets/attachment/gitpages/gitpages_test_6.png)
 
 
