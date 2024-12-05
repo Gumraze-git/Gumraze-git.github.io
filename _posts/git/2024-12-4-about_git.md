@@ -17,7 +17,7 @@ pin: false
 그런데, 개발을 공부하면서 Git을 통해 많은 것을 배우고 Git을 사용하는 일이 점점 많아졌다.
 또한, 많은 과업들이 동료와 함께 완성해 나감의 미학을 배우게 되었다.
 
-![about_git_0.png](../../assets/attachment/git/about_git_0.png)
+![about_git_0.png](/assets/attachment/git/about_git_0.png)
 _왼쪽 순서대로 GitHub, Git, Linux Logo_
 
 **그 와중에 갑자기 Git을 누가 만들었는지 궁금했다.**  
@@ -38,7 +38,7 @@ VCS를 사용하면 파일을 잃어버리거나 잘 못 고쳤을 때에도 쉽
 
 이러한 방법으로 버젼 관리를 하게 되면, 작업하던 디렉토리를 삭제하거나, 실수로 다른 파일을 수정 하는 등의 문제가 발생할 수 있다.
 
-![about_git_1.png](../../assets/attachment/git/about_git_1.png){: width="400" height="400"}
+![about_git_1.png](/assets/attachment/git/about_git_1.png){: width="400" height="400"}
 _로컬 VCS 버전 관리 예시_  
 
 ### **중앙 집중식 버전 관리(CVCS, Centralized Version Control System)**
@@ -51,7 +51,7 @@ CVCS 환경은 로컬 VCS과 비교하였을 때, 모두가 어떤 것을 작업
 > 체크아웃(checkout): 버전 관리 시스템에서 특정 버전의 파일이나 디렉토리를 가져와 직업 디렉토리(로컬)에 복사하는 작업.
 {: .prompt-tip }
 
-![about_git_2.png](../../assets/attachment/git/about_git_2.png){: width="400" height="400"}
+![about_git_2.png](/assets/attachment/git/about_git_2.png){: width="400" height="400"}
 _중앙 집중식 버전 관리 예시_ 
 
 ### **분산 버전 관리 시스템(Divided Version Control System)**
@@ -60,7 +60,7 @@ _중앙 집중식 버전 관리 예시_
 
 만일 서버에 문제가 발생하는 경우, 위 작업 파일으로 작업을 시작할 수 있으므로 안전한 백업을 수행하면서 작업이 가능하다는 장점이 있다. 
 
-![about_git_3.png](../../assets/attachment/git/about_git_3.png){: width="400" height="400"}
+![about_git_3.png](/assets/attachment/git/about_git_3.png){: width="400" height="400"}
 _분산 버전 관리 시스템 예시_
 
 - - -
@@ -71,7 +71,7 @@ _분산 버전 관리 시스템 예시_
 그는 리눅스 커널을 단지 새 PC 하드웨어가 어떻게 작동하는지 알아보기 위해 우발적으로 시작한 프로젝트라고 설명했다.
 그렇게 리눅스 시스템을 임베디드 시스템에서 개인 PC와 슈퍼 컴퓨터 그리고 모바일 장치까지 사용하는 성공적인 시스템 그리고 프로젝트가 되었다.
 
-![linus_torvalds.png](../../assets/attachment/git/linus_torvalds.png){: width="400" height="400"}
+![linus_torvalds.png](/assets/attachment/git/linus_torvalds.png){: width="400" height="400"}
 _"Tech Talk: Linus Torvalds on git"에서의 리누스 토르발스(Linus Torvalds)_
 
 리누스 토르발스는 리눅스를 개발하면서 저작권 라이센스를 아래와 같이 작성했다.
@@ -83,7 +83,7 @@ _"Tech Talk: Linus Torvalds on git"에서의 리누스 토르발스(Linus Torval
 
 ### **리눅스의 버전 관리 시스템: Git**
 
-![Git-Logo.svg](../../assets/attachment/git/Git-Logo.svg)
+![Git-Logo.svg](/assets/attachment/git/Git-Logo.svg)
 _Git LOGO_
 
 Git은 2005년 리누스 토르발스가 Linux 커널 개발 중 버전 관리를 위해 만든 시스템이다.
@@ -107,7 +107,7 @@ Git은 2005년 리누스 토르발스가 Linux 커널 개발 중 버전 관리�
 하지만, 많은 리눅스 커널 개발자들은 다른 커널 개발자들이 이미 사용하고 있는 CVS 및 SVN 등의 버전 관리 시스템에 대한 갈망이 있었고,
 리누스 토르발스는 2002년에 BitKeeper를 리눅스의 버전 관리 소프트웨어로 채택하게 되었다.
 
-![Bitkeeper_logo.png](../../assets/attachment/git/Bitkeeper_logo.png)
+![Bitkeeper_logo.png](/assets/attachment/git/Bitkeeper_logo.png)
 _BitKeeper Logo_
 
 당시, 이러한 결정에 많은 사람들이 리누스 토르발스에게 많은 의문점을 가졌다.  
@@ -125,7 +125,7 @@ _BitKeeper Logo_
 > BitKeeper의 무료 라이선스가 철회된 계기는, 앤드류 트리젤(Andrew Tridgell)이 BitKeeper의 프로토콜을 리버스 엔지니어링하여 SourcePuller라는 도구를 만들었기 때문이다.  
 
 ### **Git의 개발 배경**
-![about_git_4.png](../../assets/attachment/git/about_git_4.png)
+![about_git_4.png](/assets/attachment/git/about_git_4.png)
 _Tech Talk: Linus Torvalds on git: Git 개발 배경_
 
 Tech Talk 내용에 기반하여 Git의 개발 배경에 대해 스스로 해석해보자 한다.
@@ -152,14 +152,14 @@ Tech Talk 내용에 기반하여 Git의 개발 배경에 대해 스스로 해석
   또한, 모든 개발자들에게 커밋(commit)권한을 줄 수 없으므로 시스템이 분산되어 있어야하며,
   분산환경에서는 개발자가 자신의 저장소에 어떤 짓이든 해도 관계없어야 한다고 했다.
 
-![about_git_5.png](../../assets/attachment/git/about_git_5.png){: width="600" height="600"}
+![about_git_5.png](/assets/attachment/git/about_git_5.png){: width="600" height="600"}
 _분산환경에서의 개발자의 저장소가 가지는 자유도 [[출처]](https://joone.net/2022/10/02/47-git/)_
 
 - **시스템의 성능이 나쁘면 사용할 가치가 없다.**
   리눅스 커널 프로젝트는 아주 큰 프로젝트이므로 코드 업데이트, 합병(merge), 브랜치(branch) 작업이 빠르게 끝나야 한다고 생각했다.
   이것은 1번과 같은 맥락으로 시스템이 중앙에서 처리하는 것보다 분산되어 있어야 작업 성능이 좋아진다.
  
-![about_git_6.png](../../assets/attachment/git/about_git_6.png){: width="500" height="500"}
+![about_git_6.png](/assets/attachment/git/about_git_6.png){: width="500" height="500"}
 _분산환경에서의 시스템 처리 성능 [[출처]](https://joone.net/2022/10/02/47-git/)_
 
 - **SCM에 입력한 내용을 체크아웃했을 때 내용일 정확히 동일하다고 보장 할 수 없으면, 사용할 가치가 없다.**  
