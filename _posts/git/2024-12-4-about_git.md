@@ -5,8 +5,7 @@ category: Git
 layout: post
 comments: true
 image:
-  path: assets/attachment/git/Git_Logo_2.png
-  
+  path: /assets/attachment/git/Git_Logo_2.png
 tag: [Bootcamp, Woowa, Git, Commit, Convention]
 description: Version Control System & The Stupid Content Tracker
 pin: false
