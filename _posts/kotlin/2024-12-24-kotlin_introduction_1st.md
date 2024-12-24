@@ -32,7 +32,7 @@ Python을 공부한 경험으로 프로그래밍 언어를 공부하는 방법 �
 
 - - -
 ## **Kotlin?** 
-> HyperSkill을 통해 제작한 [Learn Kotlin/Introduction to Kotlin](https://hyperskill.org/study-plan)를 기반으로 작성됨.
+> HyperSkill을 통해 제작한 [Learn Kotlin/Introduction to Kotlin](https://hyperskill.org/study-plan)를 기반으로 작성했다.
 > {: .prompt-info}
 
 
@@ -61,37 +61,37 @@ Java에는 아래와 같은 한계점 및 문제점이 있었다.
 또한, Kotlin은 아래와 같은 차이점을 강조하고 있다.
 - Kotlin의 기본 구문은 Java와 비슷하지만, 차이점이 있다.
   - 개발자가 상속을 사용하지 않고도 클래스의 기능을 확장할 수 있는 기능 등의 기능 차이가 있다.
-  - Kotlin은 유형 추론(type inference)를 제공하여 컴파일러가 컨텍스트에 따라 변수의 유형을 결정할 수 있게 함.
-    > 유형 추론을 이용하여 코딩을 간소화하고 오류를 줄일 수 있음.
+  - Kotlin은 유형 추론(type inference)를 제공하여 컴파일러가 컨텍스트에 따라 변수의 유형을 결정할 수 있게 했다.
+    > 유형 추론을 이용하여 코딩을 간소화하고 오류를 줄일 수 있다.
 
 Kotlin project의 공개 후, 많은 개발자 커뮤니티에서 Kotlin을 사용하는 것에 대해 관심이 많았다고 한다.
 그 중 **안드로이드가 Kotlin에 대해 많은 관심을 가졌다.**
 **안드로이드는 Java를 기반으로 개발**되었는데, Java의 한계를 극복하는데 Kotlin이 많은 도움이 될 것이라고 생각했다.
 이후, Google I/O 2017 컨퍼런스에서 **Google은 Android에서 Kotlin에 대한 최고 지원(first-class support)을 하겠다고 발표**하면서,
 안드로이드는 Kotlin을 기반으로 개발되고 있다. 그리고 Java를 사용하는 많은 플랫폼에서 사용되는 범용 언어가 되었다.
-> 안드로이드의 최고 대변인(chief advocate) Chet Haase는 "We understand that not everybody is on Kotlin right now, but we believe that you should get there"라고 말함.
+> 안드로이드의 최고 대변인(chief advocate) Chet Haase는 "We understand that not everybody is on Kotlin right now, but we believe that you should get there"라고 언급했다.
 
 ### **Kotlin을 위한 애플리케이션 플랫폼: JVM, Android, JS, Native**
 - Kotlin은 JVM(Java Virtual Machine), Android, JavaScript, Native 등 다양한 애플리케이션 플랫폼에서 사용할 수 있다.
-  - Java에 익숙한 개발자는 Android 기기에서 Kotlin을 사용하는 방법을 쉽게 배울 수 있음.
+  - Java에 익숙한 개발자는 Android 기기에서 Kotlin을 사용하는 방법을 쉽게 배울 수 있다.
   - **Multiplatform**
-    - **Kotlin Multiplatform**을 사용하면 애플리케이션 논리를 구현하기 위해 Android와 IOS 프로젝트 간의 코드를 공유하는 크로스 플랫폼 모바일 애플리케이션을 빌드 할 수 있음.
+    - **Kotlin Multiplatform**을 사용하면 애플리케이션 논리를 구현하기 위해 Android와 IOS 프로젝트 간의 코드를 공유하는 크로스 플랫폼 모바일 애플리케이션을 빌드 할 수 있다.
   - Kotlin은 실용적인 언어로 설계되어, 연구 목적보다 실제 문제를 해결하는 것을 목적으로 한다.
   - **Kotlin은 여러 프로그래밍 패러다임을 지원한다.**
-    - 명령형 프로그래밍(imperative programming), **객체 지향 프로그래밍(object-oriented programming)**, 제네릭 프로그래밍(generic programming), 함수형 프로그래밍(functional programming) 등을 지원함. 
+    - 명령형 프로그래밍(imperative programming), **객체 지향 프로그래밍(object-oriented programming)**, 제네릭 프로그래밍(generic programming), 함수형 프로그래밍(functional programming) 등을 지원한다. 
   - Kotlin은 도구 친화적인 언어로, InteliJ IDEA, Eclipse, Android Studio 등의 개발 도구와 호환된다.
 
 - - -
 ## **Basic Literals: Numbers(숫자), Strings(문자열) and Characters(문자)**
-> Literals: 모든 프로그램은 본질적으로 숫자, 문자열 및 기타 문자에 관한 연산을 수행함. 이러한 것들을 "literals"라고 함.
+> Literals: 모든 프로그램은 본질적으로 숫자, 문자열 및 기타 문자에 관한 연산을 수행함. 이러한 것들을 "literals"라고 한다.
 > {: .prompt-info}
 
 ### **Integer numbers**
 현실 세계에서는 정수를 이용해서 사물을 세며, Kotlin에서는 0, 1, 2, 10, 11, 100 등으로 정수를 사용할 수 있다.
 > **TIP**: 숫자가 많이 포함되어 있는 정수는 밑줄(`_`)을 이용하여 가독성을 높일 수 있는 기능도 제공한다.  
-> Ex) 1000000 = 1_000_000 = 1___000___000  
+> Ex) 1000000 = 1\_000\_000 = 1\_\_\_000\_\_\_000  
 > 숫자의 시작이나 끝에는 밑줄을 사용할 수 없다.  
-> Ex) _1000000(x), _100_000_000_(x) 
+> Ex) \_1000000(x), \_100_000\_000\_(x) 
 {: .prompt-tip}
 
 ### **Characters(문자) & String(문자열)**
@@ -101,7 +101,7 @@ Java와 마찬가지로 Kotlin에서도 단일 문자(Characters)와 문자열(S
 - 단일 문자를 작성하려면 작은 따옴표로 기호를 감싸야한다.
   - Ex) 'A', 'B', 'C', etc
 - 숫자를 나타내는 경우(9)와 단일 문자(characters)를 나타내는 경우('9')를 혼동하지 않도록 조심해야한다.
-- 문자는 단일 기호를 나타내므로 2개 이상의 숫자나 문자를 포함할 수 없음.
+- 문자는 단일 기호를 나타내므로 2개 이상의 숫자나 문자를 포함할 수 없다.
   - Ex) 'A'(o)/ 'AB'(x) 
 
 #### **String(문자열)**
@@ -114,13 +114,13 @@ Java와 마찬가지로 Kotlin에서도 단일 문자(Characters)와 문자열(S
   > 프로그래밍 효율성(메모리)가 중요하다면,  
   > 단일 문자 사용 시 작은 따옴표를 사용하고,  
   > 문자열 사용 시 큰 따옴표를 사용해야한다.  
-  > 문자는 일반적으로 문자열보다 메모리를 적게 사용하기 때문임.  
+  > 문자는 일반적으로 문자열보다 메모리를 적게 사용하기 때문이다.  
 
 ## **Writing first program with Kotlin**
 ### **Basic terminology(기본 용어)**
 1. **프로그램(Program)**
    - 프로그램은 "명령문(statement)"라고 불리는 일련의 지시사항으로 이루어져 있으며, 순차적으로 실행된다.
-   - 가장 일반적이고 간단한 흐름은 명령문이 작성된 순서대로, 즉 위에서 아래로 하나씩 실행되는 순차적 흐름임.
+   - 가장 일반적이고 간단한 흐름은 명령문이 작성된 순서대로, 즉 위에서 아래로 하나씩 실행되는 순차적 흐름이다.
 2. **명령문(Statement, Programming Statement)**: 프로그램에서 실행할 단일 명령.
 3. **표현식(Expression)**: 단일 값을 생성하는 코드 조각
    - Ex) 2 * 2
@@ -183,16 +183,15 @@ println("Hello, World!")
   
 
 ## **용어 정리**
-- 컴파일러(Compiler): 프로그래밍 언어로 작성된 소스 코드를 기계어 또는 다른 형태의 코드 등으로 번역하는 프로그램
+- 컴파일러(Compiler): 프로그래밍 언어로 작성된 소스 코드를 기계어 또는 다른 형태의 코드 등으로 번역하는 프로그램이다.
   - 즉, 사람이 작성한 프로그래밍 언어를 컴퓨터가 이해할 수 있는 언어로 번역하는 역할을 하는 것.
-- 컨텍스트(Context): "문맥"으로, 특정 상황에서의 의미가 무엇인지를 설명함.
-  - 프로그래밍 언어에서의 컨텍스트는 특정 코드가 어떤 환경에서 실행되는지 나타내는 문맥을 설명함.
+- 컨텍스트(Context): "문맥"으로, 특정 상황에서의 의미가 무엇인지를 설명한다.
+  - 프로그래밍 언어에서의 컨텍스트는 특정 코드가 어떤 환경에서 실행되는지 나타내는 문맥을 설명한다.
 
 ## **3줄 요약**
 - 코틀린 개발 배경을 알아보았다.
 - 프로그래밍 언어를 한번이라도 경험해본 개발자에게는 쉬운 내용이다.
 - 코틀린 syntax가 궁금하면 이 글에서 찾아보자.
-
 
 ## **출처**
 - [Kotlin](https://kotlinlang.org/)
