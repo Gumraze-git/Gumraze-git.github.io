@@ -23,6 +23,5 @@ package-lock.json
 !.vscode/tasks.json
 
 # Misc
-
-# Temp posts
-_posts/temp
+_sass/vendors
+assets/js/dist
