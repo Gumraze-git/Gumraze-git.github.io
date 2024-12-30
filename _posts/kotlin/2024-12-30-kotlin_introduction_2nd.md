@@ -4,7 +4,7 @@ date: 2024-12-27 10:00:00 +0900
 layout: post
 category: Kotlin
 comments: true
-tag: [Kotlin, Java, JetBrain]
+tag: [Kotlin]
 image:
   path: assets/attachment/kotlin_study/kotlin_logo.png
 description: Introduction for Basic Kotlin
