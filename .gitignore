@@ -26,3 +26,4 @@ package-lock.json
 
 # draft
 _posts/_draft
+.DS_Store
