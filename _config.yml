@@ -9,24 +9,24 @@ theme: jekyll-theme-chirpy
 lang: en
 
 # Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
-timezone:
+timezone: Asia/Seoul
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Chirpy # the main title
+title: Gumraze # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the subtitle
+tagline: Gumraze's Dev Notes # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  Dev Technical Writing and Travel Logs
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: ""
+url: "https://gumraze-git.github.io"
 
 github:
-  username: github_username # change to your GitHub username
+  username: gumraze-git # change to your GitHub username
 
 twitter:
   username: twitter_username # change to your Twitter username
@@ -34,19 +34,20 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com # change to your email address
+  name: Gumraze
+  email: galaxydh4110@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your Twitter homepage
-    - https://github.com/username # change to your GitHub homepage
+    #- https://twitter.com/username # change to your Twitter homepage
+    - https://github.com/gumraze-git # change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
 
 # Site Verification Settings
 webmaster_verifications:
-  google: # fill in your Google verification code
+  google: 01AGLtG8glKVuULHYgm4BfKOjJ9puKEZp3oGsLBEiGo
+  naver: 4fe984d5996fb0b7ea7736b59fa65e55f0bd05fa
   bing: # fill in your Bing verification code
   alexa: # fill in your Alexa verification code
   yandex: # fill in your Yandex verification code
@@ -59,7 +60,7 @@ webmaster_verifications:
 # Web Analytics Settings
 analytics:
   google:
-    id: # fill in your Google Analytics ID
+    id: "G-3WLV4BZ28B"
   goatcounter:
     id: # fill in your GoatCounter ID
   umami:
@@ -98,21 +99,26 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+# 사이드 바 이미지 설정
+avatar: assets/avatar_img/android-chrome-512x512.png
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
-social_preview_image: # string, local or CORS resources
+
+# 소셜 미디어에서 미리보기 이미지로 사용할 이미지, 일반적으로 1.91:1(1200 x 630) 크기의 이미지가 사용됨.
+# ex) social_preview_image.jpg, https://example.com/path/to/your/image.jpg
+# 외부 리소스의 경우 CORS(Cross-Origin Resource Sharing)을 지원해야함.
+social_preview_image: assets/avatar_img/android-chrome-512x512.png # string, local or CORS resources
 
 # boolean type, the global switch for TOC in posts.
 toc: true
 
 comments:
   # Global switch for the post-comment system. Keeping it empty means disabled.
-  provider: # [disqus | utterances | giscus]
+  provider: disqus # [disqus | utterances | giscus]
   # The provider options are as follows:
   disqus:
-    shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+    shortname: gumraze-git # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
   # utterances settings › https://utteranc.es/
   utterances:
     repo: # <gh-username>/<repo>
