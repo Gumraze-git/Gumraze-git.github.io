@@ -29,3 +29,6 @@ _posts/_draft
 
 # Apple Cash file
 .DS_Store
+
+# submodule
+assets/lib
