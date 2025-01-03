@@ -2,7 +2,7 @@
 title: 코드 리뷰(Code Review),,?
 date: 2024-12-14 10:00:00 +0900
 layout: post
-category: [study, code_review]
+category: [Study]
 comments: true
 tag: [Bootcamp, CodeReview, Review, Study]
 image:
