@@ -26,4 +26,6 @@ package-lock.json
 
 # draft
 _posts/_draft
+
+# Apple Cash file
 .DS_Store
