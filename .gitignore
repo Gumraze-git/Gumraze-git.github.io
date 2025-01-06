@@ -24,11 +24,15 @@ package-lock.json
 
 # Misc
 
+# 임시 파일
 # draft
 _posts/_draft
 
 # Apple Cash file
 .DS_Store
+
+# temp 폴더
+temp
 
 # submodule
 assets/lib
