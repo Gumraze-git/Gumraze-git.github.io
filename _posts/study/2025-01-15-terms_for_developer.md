@@ -133,6 +133,26 @@ Kotlin에서의 수정자의 역할
   - 템플릿 기반.
 
 - - -
+#### Standard Input Stream: 표준 입력 스트림
+표준 입력 스트림이란 외부로부터 데이터를 입력 받을 수 있도록 제공되는 기본 데이터 흐름이다.
+데이터를 입력 받는 가장 기본적인 방법 중 하나는 표준 입력 스트림(흔히 stdin이라고 줄여 사용)을 사용하는 것이다.
+따라서, 표준 입력 스트림은 운영체제에서 제공하며, 프로그램이 외부 환경으로부터 데이터를 읽을 수 있는 경로를 제공한다.
+
+프로그래밍 언어에서도 표준 입력 스트림을 통해 데이터를 요청할 수 있다.
+- Kotlin/Java
+  - 표준 입력 스트림은 System.in 객체로 표현됨.
+  - 이를 사용하기 위해 Scanner 또는 readLine() 등의 메서드를 사용해야한다.
+  ```kotlin
+  val input = readln()
+  ```
+- Python
+  - Python에서는 input() 함수를 사용함.
+  ```python
+  data = input("Enter something: ")
+  print(f"You entered: {data}")
+  ```
+  
+- - -
 ### **T**
 - - -
 #### **Type inference**
