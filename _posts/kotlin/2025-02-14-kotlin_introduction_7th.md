@@ -3,14 +3,15 @@ title: "[Introduction to Kotlin] Kotlin의 기본 타입과 타입 변환"
 date: 2025-02-14 10:00:00 +0900
 layout: post
 category: [Kotlin]
-comments: Kotlin
+comments: true
 tag: [Kotlin]
 image:
   path: assets/attachment/kotlin_study/kotlin_logo.png
 description: Type can be conversion but you may have to be careful.
 pin: false
 ---
----
+
+- - -
 
 ## **기본 타입의 속성**
 
