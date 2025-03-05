@@ -132,7 +132,7 @@ That lay in the house that Jack built.
 ```
 > `.trimIndent()`는 공통 최소 들여쓰기를 잘라내고, 첫 번째 및 마지막 줄이 비어 있다면 이를 제거합니다.
 
----
+- - -
 ## **불리언 타입과 연산**
 ### **불리언 변수**
 불리언 변수는(boolean variables) `true`와 `false` 두 가지 값만 가질 수 있는 데이터 타입이다.
@@ -228,8 +228,6 @@ val bool = true && !false // -> true, NOT 먼저 연산 후 AND를 연산하기 
 
 
 - - -
-
-
 ## **산술 연산자**
 Kotlin에는 5가지의 산술 연산자(Arithmetic operations)가 있다.
 
@@ -402,3 +400,60 @@ println(b) // 10
 가끔은 굳이 이것을 사용해야하나 싶기도 하다.
 > 나중에 할당 연산자를 사용할 경우와 그렇지 않은 경우의 코드의 가독성 및 효율성에 대해 분석해보면 좋을 것 같다.
 
+- - -
+## **관계 연산자**
+일반적으로 숫자를 비교할 때 사용할 수 있는 6가지 관계 연산자(relational operators)가 있다.
+
+|연산자| 의미|
+|---|--|
+|==| 같음|
+| != | 같지 않음|
+| > | 보다 큼|
+| >= | 크거나 같음|
+| < | 보다 작음|
+| <= | 작거나 같음|
+
+관계 연산자의 결과는 연산에 사용되는 피연산자의 타입에 관계없이 항상 `Boolean`을 반환한다.
+
+### **정수 비교하기**
+```kotlin
+val one = 1
+val two = 2
+val three = 3
+val four = 4
+
+val oneIsOne = one == one  // true
+
+val res1 = two <= three  // true
+val res2 = two != four   // true
+val res3 = two > four    // false
+val res4 = one == three  // false
+```
+### **관계 연산자와 산술 연산자 함께 사용하기**
+관계 연산자는 산술 연산자보다 우선순위가 낮다.
+
+```kotlin
+val number = 1000
+val result = number + 10 > number + 9 // true 출력
+```
+> 산술 연산 이후 관계 연산이 수행된다.
+
+또한, Kotlin에서는 `Int`와 `Long`을 `==` 또는 `=!`으로 비교할 수 없으나,  
+`>`, `>=`, `<`, `<=` 연산자는 사용할 수 있다.
+
+```kotlin
+val one: Long = 1
+val zero: Int = 0
+println(one >= zero) // true 반환함.
+//println(one == zero) // 오류 발생.
+```
+
+Kotlin에서는 연속된 관계 연산식을 직접 사용할 수 없다.
+```kotlin
+a <= b <= c // 오류 발생
+```
+이러한 경우에는 논리 연산자를 함께 사용해야한다.
+
+```kotlin
+number > 100 && number < 200
+```
