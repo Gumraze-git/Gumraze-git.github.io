@@ -1,13 +1,13 @@
 ---
-title: "[Introduction to Kotlin] IF 문"
-date: 2025-02-28 10:00:00 +0900
+title: "[Introduction to Kotlin] If와 When 표현식"
+date: 2025-03-07 10:00:00 +0900
 layout: post
 category: [Kotlin]
 comments: true
 tag: [Kotlin]
 image:
   path: assets/attachment/kotlin_study/kotlin_logo.png
-description: Short summary of the post.
+description: If I had a Kotlin for every time I used ‘when’ instead of ‘if’, I’d be rich—when, not if!
 pin: false
 ---
 - - -
@@ -25,7 +25,7 @@ Kotlin의 조건식(conditional expressions) 중 `if` 표현식의 다양한 형
 
 ### **표현식 스타일의 if**
 다른 일부 프로그래밍 언어와 다르게, Kotlin의 `if`는 표현식(expression)이며, 문장(statement)가 아니다.  
-즉, if문이 계산 결과를 반환할 수 있으며, 해당 결과를 변수에 저장할 수 있다.  
+**즉, if문이 계산 결과를 반환할 수 있으며, 해당 결과를 변수에 저장할 수 있다.**  
 
 ```kotlin
 val max = if (a > b) {
@@ -72,10 +72,30 @@ val max = if (a > b) a else b
 
 - - -
 ## **when: if의 강력한 대체재**
-Kotlin에서는 `if-else-if` 체인을 대체할 수 있는 더 강력하고 표현력 있는 방법으로 `**when**`표현식을 제공한다.  
-`when`표현식을 사용하면 여러 조건을 더 쉽게 처리할 수 있으며, 코드의 가독성을 높일 수 있다.  
+다양하고 많은 조건에 대해 `if-else` 조건 식을 사용하다 보면, 그 길이가 점점 길어져 가독성이 떨어진다.  
 
-아래는 `when` 표현식의 기본 예제이다.  
+```kotlin
+val number = 5
+
+if (number == 1) {
+    println("One")
+} else if (number == 2) {
+    println("Two")
+} else if (number == 3) {
+    println("Three")
+} else if (number == 4) {
+    println("Four")
+} else {
+    println("Number is greater than four")
+}
+```
+
+**위 코드는 가독성이 많이 떨어진다.**  
+
+Kotlin은 `if-else-if` 체인을 대체할 수 있는, **변수의 값에 따라 서로 다른 동작을 수행할 수 있도록 하는 `when`표현식을 제공한다.** 
+**`when`표현식을 사용하면 여러 조건을 더 쉽게 처리할 수 있으며, 코드의 가독성을 높일 수 있다.**
+
+다음은 위 코드를 `when` 구문을 이용하여 작성한 예시이다.
 ```kotlin
 val number = 5
 
@@ -88,7 +108,49 @@ when (number) {
 }
 ```
 `when` 표현식은 주어진 변수(number)의 값을 확인하고, 일치하는 경우 해당 코드 블록을 실행한다.
-> `else`는 말 그대로 나머지 경우의 처리를 수행한다.
+
+이어, `when`의 여러 사용법에 대해 다루고자 한다.  
+
+### **여러 조건 묶기**
+여러 조건을 하나의 분기로 처리해야 할 경우, 조건들을 쉼표로 구분하여 필요한 만큼 묶을 수 있다.  
+
+```kotlin
+fun main() {
+    val (var1, op, var2) = readln().split(" ")
+  
+    val a = var1.toInt()
+    val b = var2.toInt()
+    when (op) {
+      "+", "plus" -> println(a + b)
+      "-", "minus", -> println(a - b) // 후행 쉼표 허용
+      "*", "times" -> println(a * b)
+      else -> println("Unknown operator")
+    }
+}
+```
+
+### **다중 명령문 분기**
+`when` 표현식의 각 분기는 중괄호 `{}`를 사용하여 여러 명령문을 포함할 수 있다.
+
+```kotlin
+when (op) {
+    "+", "plus" -> { // 중괄호 열기
+        val sum = a + b
+        println(sum)
+    } // 중괄호 닫기
+    "-", "minus" -> {
+        val diff = a - b
+        println(diff)
+    }
+    "*", "times" -> {
+        val product = a * b
+        println(product)
+    }
+    else -> println("Unknown operator")
+}
+```
+> 이처럼 다양한 방식으로 `when` 표현식을 사용할 수 있지만,  
+> 가장 가독성이 높은 방식을 사용하는 것이 좋다.
 
 ### **when을 표현식으로 사용하기**
 Kotlin의 `when`은 표현식으로도 사용 가능하며, 결과 값을 반환할 수 있다.  
@@ -104,7 +166,9 @@ val message = when (number) {
 ```
 
 ### **when을 범위 및 조건과 함께 사용**
-`when`은 범위(range) 및 복잡한 조건과도 함께 사용할 수도 있다.
+
+**`when`은 인자 없이도 사용할 수 있으며, 범위(range) 및 복잡한 조건과 사용 가능하다.**  
+이러한 경우 **각 분기의 조건은 불리언 표현식**이 되며, **여러 조건이 참이어도 가장 먼저 일치하는 분기만 실행된다**.
 
 ```kotlin
 val number = 15
@@ -115,5 +179,3 @@ when {
     else -> println("Odd number greater than 10")
 }
 ```
-
-`when`에서 변수를 직접 비교하지 않고, 조건을 평가할 수도 있다.  
