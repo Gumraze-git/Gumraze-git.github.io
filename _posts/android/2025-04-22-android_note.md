@@ -1,6 +1,6 @@
 ---
 title: "[안드로이드] 안드로이드 개발 노트"
-date: 2025-04-08 10:00:00 +0900
+date: 2025-04-22 10:00:00 +0900
 layout: post
 category: [Android]
 comments: true
